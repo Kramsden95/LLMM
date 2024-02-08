@@ -142,7 +142,41 @@
             </div>
         </section>
         <section id="#Contact">
+            <div class="contactHeader">
 
+            </div>
+            <div class="jobApply">
+                <h2>Job Application</h2>
+                <form action="#">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter First Name.."><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" required placeholder="Enter Last Name.."><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Enter Email.."><br>
+                    <label for="jrole">Job Role:</label><br>
+                    <select name="Job Role" id="jrole" required>
+                        <option value="select a role" disabled selected hidden>Select a Job Role..</option>
+                        <option value="-" disabled>- - -</option>
+                        <option value="fenddev">Front-End Developer</option>
+                        <option value="benddev">Back-End Developer</option>
+                        <option value="design">Designer</option>
+                        <option value="market">Marketing</option>
+                        <option value="bdata">Big Data</option>
+                    </select><br>
+                    <label for="address">Address:</label><br>
+                    <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address.."></textarea><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city" placeholder="Enter City Name.."><br>
+                    <label for="pcode">Postal Code:</label><br>
+                    <input type="text" id="pcode" name="postcode" required placeholder="Enter Postal Code"><br>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="upload">Upload your CV:</label><br>
+                    <input type="file" id="upload" name="upload"><br>
+                    <input type="submit" value="Apply Now">
+                </form>
+            </div>
         </section>
     </div>
 </body>
