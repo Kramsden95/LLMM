@@ -19,6 +19,9 @@ body {
 header {
     background-color: rgb(0, 250, 250, .3);
     padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 .headerMenu {
@@ -100,4 +103,32 @@ header li:hover {
     border: 1px solid aliceblue;
     transition: 0.5s;
     color: black;
+}
+
+#Services {
+    text-align: center;
+}
+
+.servicesCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicesHeader {
+    align-items: center;
+    margin: 0 20%;
+}
+
+.servicesHeader h1 {
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.card {
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    border: solid 1px black;
+
 }
