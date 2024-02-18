@@ -5,6 +5,10 @@
     font-family: 'Kanit', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: aliceblue;
     /*Default text color on full page*/
@@ -53,6 +57,7 @@ header {
     top: 0;
     /*make sure it stays at the top*/
     width: 100vw;
+    z-index: 1000;
 }
 
 /*
@@ -72,6 +77,7 @@ The full header contents grouped
     flex-direction: row;
     align-items: center;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .headerKTI img {
@@ -138,6 +144,10 @@ The first part you see
     align-items: center;
     padding-bottom: 75px;
     margin-top: 115px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*("FULL STACK DEVELOPER")*/
@@ -173,6 +183,10 @@ The first part you see
     text-align: center;
     background-color: rgba(119, 136, 153, 0.768);
     padding: 50px 10% 75px 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .servicesCards {
@@ -235,6 +249,11 @@ The first part you see
     flex-direction: column;
     align-items: center;
     padding: 50px 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
 }
 
 .projectsHeader {
@@ -256,7 +275,6 @@ The first part you see
 }
 
 .projectDisplay {
-    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -316,21 +334,13 @@ The first part you see
     background-color: rgba(119, 136, 153, 0.768);
     padding: 20px 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px ;
-}
-
-.aboutImage img {
-    border-radius: 80px;
-}
-
-.aboutText {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20% 20px 20px;
+    padding: 50px ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .aboutHeader h1 {
@@ -343,6 +353,25 @@ The first part you see
     font-size: 50px;
     color: rgb(145, 10, 120);
     text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.aboutImage img {
+    border-radius: 80px;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .aboutMe h3{
@@ -377,4 +406,149 @@ The first part you see
     transition: 0.5s;
     border-radius: 10px;
     color: crimson;
+}
+
+#Contact {
+    text-align: center;
+    background-color: rgba(112, 132, 132, 0.694);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+.contactHeader h2 {
+    padding: 0 40px;
+    margin: 0 0 25px 0;
+    border: solid 1px rgb(0, 255, 255, .2);
+    background-color: rgb(64, 137, 137);
+    box-shadow: 0 2px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    font-size: 50px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.jobApply {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid 1px rgb(0, 255, 255, 0.2);
+    border-radius: 20px;
+    min-width: 800px;
+    max-width: 700px;
+    margin: 50px 2%;
+    background-color: rgb(64, 137, 137);
+}
+
+.jobApply h2{
+    font-size: 30px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 1px 1px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    margin-bottom: 20px;
+}
+
+.jobApply .columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobApply .columna {
+    flex: 1;
+    margin: 10px;
+}
+
+.dataEntry {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.dataEntry label{
+    display: block;
+    font-size: 18px;
+    color: rgb(0, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.dataEntry input,
+.dataEntry textarea,
+.dataEntry select {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #396c6c;
+    border-radius: 8px;
+    background-color: rgb(80, 175, 175);
+    color: aliceblue;
+    font-size: 16px;
+    outline: none;
+}
+
+.dataEntry input::placeholder,
+.dataEntry textarea::placeholder,
+.dataEntry select::placeholder {
+    color: aliceblue;
+}
+
+/*
+Shader Layers for the header background image
+*/
+.footerLayer2 {
+    background-color: rgb(0, 0, 0, .75);
+    /*darken*/
+}
+
+.footerLayer {
+    background-color: rgb(63, 255, 255, .2);
+    /*blue colour*/
+    padding: 20px;
+    /*so that the header BG image matches the header size*/
+}
+
+footer {
+    background-image: url(images/Tech_Header_BG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.footer span {
+    color: rgb(98, 125, 186);
+}
+
+.Socials{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.footer h1 {
+    font-size: 25px;
+}
+
+.footer h2 {
+    font-size: 18px;
+}
+
+.footer h3 {
+    font-size: 15px;
+}
+
+.Socials img {
+    width: 50px;
+    padding: 5px 15px;
 }

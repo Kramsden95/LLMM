@@ -132,73 +132,111 @@
             </div>
         </section>
         <section id="About">
-            <div class="aboutImage">
-                <img src="images/Me_400x400.jpg" alt="">
+            <div class="aboutHeader">
+                <h1>About Me</h1>
             </div>
-            <div class="aboutText">
-                <div class="aboutHeader">
-                    <h1>About Me</h1>
+            <div class="aboutInfo">
+                <div class="aboutImage">
+                    <img src="images/Me_400x400.jpg" alt="">
                 </div>
-                <div class="aboutMe">
-                    <h3>Full Stack Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis, atque tempora
-                        odio
-                        impedit vero quidem natus dolores numquam voluptas perspiciatis dolorem suscipit maxime?
-                        Mollitia
-                        amet incidunt ducimus quia nihil?</p>
+                <div class="aboutText">
+                    <div class="aboutMe">
+                        <h3>Full Stack Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis, atque
+                            tempora
+                            odio
+                            impedit vero quidem natus dolores numquam voluptas perspiciatis dolorem suscipit maxime?
+                            Mollitia
+                            amet incidunt ducimus quia nihil?</p>
+                    </div>
+                    <a href="#Resume">
+                        <div class="resume">Download Resume</div>
+                    </a>
                 </div>
-                <a href="#Resume">
-                    <div class="resume">Download Resume</div>
-                </a>
             </div>
         </section>
         <section id="Contact">
             <div class="contactHeader">
-
+                <h2>Contact Us</h2>
             </div>
             <div class="jobApply">
                 <h2>Job Application</h2>
                 <form action="#">
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname" required placeholder="Enter First Name.."><br>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname" required placeholder="Enter Last Name.."><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="Enter Email.."><br>
-                    <label for="jrole">Job Role:</label><br>
-                    <select name="Job Role" id="jrole" required>
-                        <option value="select a role" disabled selected hidden>Select a Job Role..</option>
-                        <option value="-" disabled>- - -</option>
-                        <option value="fenddev">Front-End Developer</option>
-                        <option value="benddev">Back-End Developer</option>
-                        <option value="design">Designer</option>
-                        <option value="market">Marketing</option>
-                        <option value="bdata">Big Data</option>
-                    </select><br>
-                    <label for="address">Address:</label><br>
-                    <textarea name="address" id="address" cols="30" rows="10"
-                        placeholder="Enter your address.."></textarea><br>
-                    <label for="city">City:</label><br>
-                    <input type="text" id="city" name="city" placeholder="Enter City Name.."><br>
-                    <label for="pcode">Postal Code:</label><br>
-                    <input type="text" id="pcode" name="postcode" required placeholder="Enter Postal Code.."><br>
-                    <label for="date">Date:</label><br>
-                    <input type="date" id="date" name="date"><br>
-                    <label for="upload">Upload your CV:</label><br>
-                    <input type="file" id="upload" name="upload"><br>
+                    <div class="columnas">
+                        <div class="columna">
+                            <div class="dataEntry">
+                                <label for="fname">First Name (*):</label>
+                                <input type="text" id="fname" name="fname" required
+                                    placeholder="Enter First Name.."><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="lname">Last Name (*):</label>
+                                <input type="text" id="lname" name="lname" required placeholder="Enter Last Name.."><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="email">Email (*):</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter Email.."><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="address">Address:</label>
+                                <textarea name="address" id="address" cols="30" rows="10"
+                                    placeholder="Enter your address.."></textarea><br>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="dataEntry">
+                                <label for="jrole">Job Role (*):</label>
+                                <select name="Job Role" id="jrole" required>
+                                    <option value="select a role" disabled selected hidden>Select a Job Role..</option>
+                                    <option value="-" disabled>- - -</option>
+                                    <option value="fenddev">Front-End Developer</option>
+                                    <option value="benddev">Back-End Developer</option>
+                                    <option value="design">Designer</option>
+                                    <option value="market">Marketing</option>
+                                    <option value="bdata">Big Data</option>
+                                </select><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city" placeholder="Enter City Name.."><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="pcode">Postal Code (*):</label>
+                                <input type="text" id="pcode" name="postcode" required
+                                    placeholder="Enter Postal Code.."><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="date">Date:</label>
+                                <input type="date" id="date" name="date"><br>
+                            </div>
+                            <div class="dataEntry">
+                                <label for="upload">Upload your CV:</label>
+                                <input type="file" id="upload" name="upload"><br>
+                            </div>
+                        </div>
+                    </div>
                     <input type="submit" value="Apply Now">
                 </form>
             </div>
         </section>
     </div>
-    <div class="footer">
-        <h1>K-Tech Inc</h1>
-        <h2>Your Complete Web Solution</h2>
-        <a href="fb"></a>
-        <a href="ig"></a>
-        <a href="x"></a>
-        <h3>Copyright &copy; 2024 DAM, All rights reserved</h3>
-    </div>
+    <footer>
+        <div class="footerLayer2">
+            <div class="footerLayer">
+                <div class="footer">
+                    <h1>K-TECH <span>INC.</span></h1>
+                    <h2>Your Complete Web Solution</h2>
+                    <div class="Socials">
+                        <a href="https://www.facebook.com" target=”_blank”><img src="images/SocialsFB.png" alt="Facebook Link"></a>
+                        <a href="https://www.instagram.com" target=”_blank”><img src="images/SocialsIG.png" alt="Instagram Link"></a>
+                        <a href="https://www.twitter.com" target=”_blank”><img src="images/SocialsX.png" alt="Twitter Link"></a>
+                        <a href="https://www.youtube.com" target=”_blank”><img src="images/SocialsYT.png" alt="Youtube Link"></a>
+                    </div>
+                    <h3>Copyright &copy; 2024 DAM, All rights reserved</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
