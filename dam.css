@@ -111,7 +111,7 @@ and their links
     border: 2px solid transparent;
     /*this is for the border that appears with hover so that the size doesnt change*/
     transition: 0.5s;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 header a {
@@ -123,7 +123,7 @@ header li:hover {
     background-color: rgb(138, 43, 226, .2);
     border: 2px solid aliceblue;
     transition: 0.5s;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 /*The main body of the front page into Sections*/
@@ -142,6 +142,7 @@ The first part you see
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
     padding-bottom: 75px;
     margin-top: 115px;
     min-height: 100vh;
@@ -187,11 +188,13 @@ The first part you see
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 150px;
 }
 
 .servicesCards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .servicesHeader {
@@ -222,7 +225,7 @@ The first part you see
     border-radius: 20px;
     min-width: 250px;
     max-width: 300px;
-    margin: 0 2%;
+    margin: 2%;
     padding: 30px;
     background-color: rgb(64, 137, 137);
 }
@@ -277,7 +280,7 @@ The first part you see
 .projectDisplay {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: solid 1px black;
@@ -288,17 +291,22 @@ The first part you see
     background-color: rgb(64, 137, 137);
 }
 
-.projectDisplay div {
+.project1 {
     display: flex;
-    flex-basis: calc(50% - 0px);
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .projectDescription {
     display: flex;
-    justify-content: left;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    height: 350px;
 }
 
 .projectDescription h2 {
@@ -319,13 +327,23 @@ The first part you see
     padding: 0 20px;
 }
 
+.projectImage1 {
+    max-height: 350px;
+}
+
 .projectImage1 img {
     width: 350px;
+    max-height: 350px;
     border-radius: 0 20px 0 0;
+}
+
+.projectImage2 {
+    max-height: 350px;
 }
 
 .projectImage2 img {
     width: 350px;
+    max-height: 350px;
     border-radius: 0 0 0 20px;
 }
 
@@ -337,6 +355,7 @@ The first part you see
     flex-direction: column;
     align-items: center;
     padding: 50px ;
+    padding-top: 150px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -488,6 +507,7 @@ The first part you see
     color: aliceblue;
     font-size: 16px;
     outline: none;
+    resize: none;
 }
 
 .dataEntry input::placeholder,
@@ -496,8 +516,26 @@ The first part you see
     color: aliceblue;
 }
 
+.submitButton input[type=submit]{
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.254);
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.submitButton input[type=submit]:hover {
+    background-color: rgb(138, 43, 226, .2);
+    border: 1px solid aliceblue;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: crimson;
+}
+
 /*
-Shader Layers for the header background image
+Shader Layers for the footer background image
 */
 .footerLayer2 {
     background-color: rgb(0, 0, 0, .75);
@@ -508,7 +546,6 @@ Shader Layers for the header background image
     background-color: rgb(63, 255, 255, .2);
     /*blue colour*/
     padding: 20px;
-    /*so that the header BG image matches the header size*/
 }
 
 footer {
@@ -551,4 +588,39 @@ footer {
 .Socials img {
     width: 50px;
     padding: 5px 15px;
+}
+
+
+
+/* Media Queries */
+
+/* Projects Query */
+@media(max-width:840px){
+    /* Projects Window */
+    .projectDisplay {
+        max-width: 350px;
+    }
+    .project1 {
+        flex-direction: column;
+    }
+    .project2 {
+        flex-direction: column;
+    }
+    .projectImage1 img {
+        border-radius: 0;
+    }
+    .projectImage2 img {
+        border-radius: 0 0 20px 20px;
+    }
+    
+
+    /* About Me */
+    .aboutInfo {
+        flex-direction: column-reverse;
+    }
+    .aboutImage {
+        margin-top: 50px;
+    }
+
+    /* Contact Apply Window */
 }
