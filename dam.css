@@ -11,15 +11,12 @@ html {
 
 body {
     color: aliceblue;
-    /*Default text color on full page*/
     background-color: rgb(0, 0, 0);
-    /*in case the BG image doesnt show*/
     background-image: url(images/bgimg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    /*keeps it in the same place when you stretch the window*/
     height: 100vh;
     width: 100vw;
 }
@@ -40,7 +37,6 @@ Shader Layers for the header background image
     background-color: rgb(63, 255, 255, .2);
     /*blue colour*/
     padding: 20px;
-    /*so that the header BG image matches the header size*/
 }
 
 /*
@@ -53,15 +49,13 @@ header {
     background-repeat: no-repeat;
     padding: 0;
     position: fixed;
-    /*makes sure it stays when you scroll down the page*/
     top: 0;
-    /*make sure it stays at the top*/
     width: 100vw;
     z-index: 1000;
 }
 
 /*
-The full header contents grouped
+The full header contents, grouped
 (Logo -- Sections)
 */
 .headerMenu {
@@ -71,7 +65,7 @@ The full header contents grouped
     margin-left: 10%;
 }
 
-/*The header Logo and "K-TECH INC."*/
+/* Logo and "K-TECH INC."*/
 .headerKTI {
     display: flex;
     flex-direction: row;
@@ -109,7 +103,6 @@ and their links
     margin: 5px;
     font-size: 22px;
     border: 2px solid transparent;
-    /*this is for the border that appears with hover so that the size doesnt change*/
     transition: 0.5s;
     border-radius: 20px;
 }
@@ -129,11 +122,11 @@ header li:hover {
 /*The main body of the front page into Sections*/
 .sections {
     background-color: rgb(0, 0, 0, .7);
-    /*making the background image darker*/
 }
 
+
 /*
-First section (Home)
+Section (Home)
 The first part you see
 (The Logo/My name/My title/My portfolio)
 */
@@ -179,7 +172,8 @@ The first part you see
     border-radius: 10px;
 }
 
-/*Next Section*/
+
+/* Section (Services) */
 #Services {
     text-align: center;
     background-color: rgba(119, 136, 153, 0.768);
@@ -191,12 +185,14 @@ The first part you see
     padding-top: 150px;
 }
 
+/* The group of cards */
 .servicesCards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* Services title */
 .servicesHeader {
     display: flex;
     flex-direction: column;
@@ -219,6 +215,7 @@ The first part you see
     padding: 20px;
 }
 
+/* Each individual card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: solid 1px black;
@@ -244,6 +241,8 @@ The first part you see
     padding: 20px 0 0 0;
 }
 
+
+/* Section (Projects) */
 #Projects {
     text-align: center;
     background-color: rgba(112, 132, 132, 0.694);
@@ -259,6 +258,7 @@ The first part you see
     padding-top: 150px;
 }
 
+/* Projects title */
 .projectsHeader {
     display: flex;
     flex-direction: column;
@@ -277,6 +277,7 @@ The first part you see
     text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
 }
 
+/* The window that contains the projects */
 .projectDisplay {
     display: flex;
     flex-wrap: wrap;
@@ -291,16 +292,7 @@ The first part you see
     background-color: rgb(64, 137, 137);
 }
 
-.project1 {
-    display: flex;
-    flex-direction: row;
-}
-
-.project2 {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
+/* The description of 'x' project */
 .projectDescription {
     display: flex;
     justify-content: center;
@@ -327,6 +319,12 @@ The first part you see
     padding: 0 20px;
 }
 
+/* Project 1 details */
+.project1 {
+    display: flex;
+    flex-direction: row;
+}
+
 .projectImage1 {
     max-height: 350px;
 }
@@ -335,6 +333,12 @@ The first part you see
     width: 350px;
     max-height: 350px;
     border-radius: 0 20px 0 0;
+}
+
+/* Project 2 details */
+.project2 {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .projectImage2 {
@@ -347,6 +351,8 @@ The first part you see
     border-radius: 0 0 0 20px;
 }
 
+
+/* Section (About) */
 #About {
     text-align: center;
     background-color: rgba(119, 136, 153, 0.768);
@@ -362,6 +368,7 @@ The first part you see
     justify-content: center;
 }
 
+/* About Me title */
 .aboutHeader h1 {
     padding: 0 40px;
     margin: 0 0 25px 0;
@@ -374,6 +381,7 @@ The first part you see
     text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
 }
 
+/* About Me contents */
 .aboutInfo {
     display: flex;
     flex-direction: row;
@@ -382,10 +390,12 @@ The first part you see
     margin-top: 40px;
 }
 
+/* About Me picture */
 .aboutImage img {
     border-radius: 80px;
 }
 
+/* About Me written content */
 .aboutText {
     display: flex;
     flex-direction: column;
@@ -405,6 +415,7 @@ The first part you see
     padding: 0 20px 50px 20px;
 }
 
+/* Download Resume button */
 #About .aboutText a {
     text-decoration: none;
     color: aliceblue;
@@ -427,6 +438,8 @@ The first part you see
     color: crimson;
 }
 
+
+/* Section (Contact Us) */
 #Contact {
     text-align: center;
     background-color: rgba(112, 132, 132, 0.694);
@@ -438,6 +451,7 @@ The first part you see
     padding-top: 150px;
 }
 
+/* Contact Us title */
 .contactHeader h2 {
     padding: 0 40px;
     margin: 0 0 25px 0;
@@ -450,6 +464,7 @@ The first part you see
     text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
 }
 
+/* Apply contents and container */
 .jobApply {
     display: flex;
     flex-wrap: wrap;
@@ -482,6 +497,7 @@ The first part you see
     margin: 10px;
 }
 
+/* Each individual entry (i.e. Name, Address, etc.) */
 .dataEntry {
     text-align: left;
     margin-bottom: 20px;
@@ -516,6 +532,7 @@ The first part you see
     color: aliceblue;
 }
 
+/* Submit Button */
 .submitButton input[type=submit]{
     font-size: 22px;
     background-color: rgba(0, 0, 0, 0.254);
@@ -534,20 +551,20 @@ The first part you see
     color: crimson;
 }
 
-/*
-Shader Layers for the footer background image
-*/
+
+/* FOOTER */
+
+/* Shader Layers for the footer background image */
 .footerLayer2 {
     background-color: rgb(0, 0, 0, .75);
-    /*darken*/
 }
 
 .footerLayer {
     background-color: rgb(63, 255, 255, .2);
-    /*blue colour*/
     padding: 20px;
 }
 
+/* Footer background image */
 footer {
     background-image: url(images/Tech_Header_BG.jpg);
     background-position: center;
@@ -555,6 +572,7 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* Footer contents */
 .footer {
     display: flex;
     flex-direction: column;
@@ -567,28 +585,33 @@ footer {
     color: rgb(98, 125, 186);
 }
 
+/* Social Media links */
 .Socials{
     display: flex;
     flex-direction: row;
     padding: 15px;
 }
 
-.footer h1 {
-    font-size: 25px;
-}
-
-.footer h2 {
-    font-size: 18px;
-}
-
-.footer h3 {
-    font-size: 15px;
-}
-
 .Socials img {
     width: 50px;
     padding: 5px 15px;
 }
+
+/* "K-Tech INC." */
+.footer h1 {
+    font-size: 25px;
+}
+
+/* "Your Complete Web Solution" */
+.footer h2 {
+    font-size: 18px;
+}
+
+/* "Copyright &copy; 2024 DAM, All rights reserved" */
+.footer h3 {
+    font-size: 15px;
+}
+
 
 
 
@@ -621,6 +644,4 @@ footer {
     .aboutImage {
         margin-top: 50px;
     }
-
-    /* Contact Apply Window */
 }
